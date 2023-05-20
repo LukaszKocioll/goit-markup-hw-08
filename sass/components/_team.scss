@@ -1,0 +1,65 @@
+.team {
+  padding: 94px 0;
+  margin: 0 auto;
+  background-color: #f5f4fa;
+
+  &__tiles {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  }
+  &__title {
+    margin: auto auto 50px auto;
+    text-align: center;
+    line-height: 1.16;
+    color: $title-color;
+    font-size: 36px;
+  }
+  &__worker {
+    background-color: $text-button;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__name {
+    margin: 30px auto 0 auto;
+    text-align: center;
+    line-height: 1.18;
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  &__position {
+    margin: 10px auto 16px auto;
+    text-align: center;
+    line-height: 1.18;
+    color: $description-color;
+    font-size: 16px;
+  }
+  &__socials {
+    cursor: pointer;
+    justify-content: space-between;
+    padding: 16px 32px 18px 32px;
+    display: flex;
+  }
+  &__icon:hover {
+    fill: $border-projects;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icons:hover {
+    border-radius: 50%;
+    fill: $border-projects;
+    background-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {cursor: pointer;
+    padding: 12px;
+    display: flex;
+    fill: $border-customers;
+    width: 44px;
+    height: 44px;}
+}

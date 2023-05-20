@@ -1,0 +1,100 @@
+.header {
+  align-items: baseline;
+  display: flex;
+  margin: 0;
+  max-width: 1200px;
+  padding: 32px 0;
+  &__logo {
+    font-family: "Raleway";
+    text-decoration: none;
+    line-height: 1.2;
+    color: $tile-color;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  &__hlogo {
+    line-height: 1.2;
+    color: $background-hover-color;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  &__navigations {
+    padding: 0 0;
+    display: flex;
+    margin: 0 345px 0 93px;
+    column-gap: 46px;
+  }
+  &__underline {
+    position: relative;
+  }
+  &__underline::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 58px;
+    display: block;
+    margin-top: 32px;
+    background-color: $background-hover-color;
+    border-radius: 2px;
+  }
+  &__navigation {
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.1;
+    color: $title-color;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__navigation:hover {
+    color: $background-hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__navigation:focus {
+    color: $background-hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__email {
+    margin-left: 10px;
+    margin-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.1;
+    color: $description-color;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__email:hover {
+    color: $background-hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__email:focus {
+    color: $background-hover-color;
+  }
+  &__phone {
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.1;
+    color: $description-color;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__phone:hover {
+    color: $background-hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__phone:focus {
+    color: $background-hover-color;
+  }
+  &__field:hover {
+    margin: 0 0;
+    cursor: pointer;
+    fill: $background-hover-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
