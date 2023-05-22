@@ -1,4 +1,5 @@
 @import "utils/vars.scss";
+@import "utils/mixins";
 @import "components/description";
 @import "components/duties";
 @import "components/_container";
@@ -12,3 +13,4 @@
 @import "components/global";
 @import "components/section";
 @import "components/projects";
+@import "components/direction";

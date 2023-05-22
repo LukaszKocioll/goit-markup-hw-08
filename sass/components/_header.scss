@@ -2,8 +2,11 @@
   align-items: baseline;
   display: flex;
   margin: 0;
-  max-width: 1200px;
-  padding: 32px 0;
+  max-width: 480px;
+  padding: 16px 0;
+  @include deskop {
+    max-width: 1200px;
+    padding: 32px 0;}
   &__logo {
     font-family: "Raleway";
     text-decoration: none;
@@ -20,9 +23,10 @@
   }
   &__navigations {
     padding: 0 0;
-    display: flex;
+    display: none;
     margin: 0 345px 0 93px;
     column-gap: 46px;
+    @include deskop {display: flex;}
   }
   &__underline {
     position: relative;
@@ -89,6 +93,9 @@
   }
   &__phone:focus {
     color: $background-hover-color;
+  }
+  &__field {
+   display: none;
   }
   &__field:hover {
     margin: 0 0;

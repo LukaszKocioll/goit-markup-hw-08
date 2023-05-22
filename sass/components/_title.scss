@@ -1,4 +1,4 @@
-.title {
+.title {max-width: 480px;
   background-image: linear-gradient(
   to top,
   rgba(47, 48, 58, 0.4),
@@ -7,21 +7,27 @@
 url("../images/img-background.jpg");
 background-repeat: no-repeat;
 background-position: 50% 50%;
-background-size: 1600px;
+background-size: cover;
 text-align: center;
-  padding: 200px 0;
-  background-color: $background-beautification;
+@include deskop {max-width: none;
+  background-size: 1600px;
+  text-align: center;
+    padding: 200px 0;
+    background-color: $background-beautification;}
   
   &__header {
-    margin: 0 auto;
+    margin: 118px auto 30px auto;
   line-height: 1.3;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   color: $text-button;
   max-width: 696px;
+  @include deskop {
+    margin: 0 auto;
+  font-size: 44px;}
   }
   &__button {
-    margin: 30px auto 0 auto;
+    margin:0 auto 118px auto;
     padding: 10px 42px;
     font-family: "Roboto";
     cursor: pointer;
@@ -31,6 +37,8 @@ text-align: center;
     line-height: 1.8;
     font-weight: 700;
     font-size: 16px;
+    @include deskop {
+      margin: 30px auto 0 auto;}
   }
   &__button:hover {
     color: $text-button;

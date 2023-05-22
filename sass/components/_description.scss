@@ -1,34 +1,41 @@
-.description {
+.description { max-width: 480px;
+  @include deskop {
+    max-width: none;
   column-gap: 30px;
   padding-bottom: 94px;
   display: flex;
-  justify-content: space-between;
-  &__advantages {
-    column-gap: 30px;
-    padding: 0 0;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
+  justify-content: space-between;}
+  
+  &__advantages {padding-left: 0;
+    @include deskop {
+      column-gap: 30px;
+      padding: 0 0;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;}
   }
-  &__icon {
-    margin-bottom: 30px;
+  &__icon {margin-top: 30px;
     padding: 25px 0;
     background-color: $our-team-background;
     border-radius: 4px;
   }
   &__img {
+    
     display: flex;
     margin: 0 auto;
     width: 70px;
     height: 70px;
   }
-  &__title {
+  &__title {text-align: center;
+    padding-top: 30px;
     margin: auto auto 10px auto;
     line-height: 1.14;
     color: $title-color;
     font-size: 14px;
+    @include deskop{text-align: left;padding-top: 0;
+     }
   }
-  &_text {
+  &_text {padding: 0 0;
     margin: 0 auto;
     line-height: 1.7;
     color: $description-color;

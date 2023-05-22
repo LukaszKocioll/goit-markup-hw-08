@@ -1,8 +1,19 @@
-.footer {
-  padding: 60px 0;
+.footer {max-width: 480px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
     margin: 0 auto;
     background-color: $background-beautification;
-    &__navigation{display: flex;}
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include deskop {justify-content: left;flex-wrap: nowrap;flex-direction:row;display: block;max-width: none;
+      padding: 60px 0;}
+    &__navigation{display: flex;
+    flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+@include deskop {flex-wrap: nowrap;flex-direction: row; text-align: left;}}
   &__logo {
     margin: 0 auto;
     font-family: Raleway;
@@ -43,7 +54,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__email:focus {
-    color: var(--background-hover-color);
+    color: $background-hover-color;
   }
   &__phone {
     display: block;
@@ -64,15 +75,21 @@
   }
   &__incentive {
     font-weight: 700;
-    margin: 12px auto 0 70px;
     color: $text-button;
     font-size: 14px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    @include deskop {
+      margin: 12px auto 0 70px;}
   }
   &__icons {
     column-gap: 10px;
-    padding: 20px 0 0 70px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    padding: 0 0;
+    @include deskop {
+      padding: 20px 0 0 70px;justify-content: left;}
   }
   &__img {
     border-radius: 50%;
@@ -90,30 +107,30 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__newsletter {
-    margin-left: 78px;
-  }
-  &__title {
+  &__newsletter {@include deskop {margin-left: 78px;}}
+  &__title {margin-top: 60px;
+    margin-bottom: 20px;
     color: $text-button;
     font-weight: 700;
     font-size: 14px;
+    @include deskop {margin: 0;
   }
-  &__enter {
-    display: flex;
-  }
+  &__enter {@include deskop{display: flex;}}
   &__field {
     background-color: $background-beautification;
-    padding: 15px;
     color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
-    margin-right: 12px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include deskop{
+      padding: 15px;
+      width: 358px;
+      margin-right: 12px;}
   }
-  &__button {
+  &__button {margin-top: 20px;
     white-space: nowrap;
     background-color: $background-hover-color;
     color: #fff;
@@ -128,6 +145,7 @@
     height: 50px;
     text-align: center;
     cursor: pointer;
+    @include deskop {margin:0;}
   }
   &__background {
     padding: 60px 0;
@@ -135,4 +153,4 @@
     background-color: $background-beautification;
   }
 }
-
+}

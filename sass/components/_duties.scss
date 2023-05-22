@@ -1,9 +1,15 @@
-.duties {
+.duties {max-width: 450px;
+  margin: 60px auto;
+  @include deskop {max-width: none;
+  margin: 0;}
   
-  &__tiles {display: flex;
-    justify-content: space-between;
+  &__tiles {
     margin: 0 auto;
-    padding: 0 0;}
+    @include deskop {display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0 0;}
+    }
   &__title {
     text-align: center;
     margin: 0 auto 50px auto;

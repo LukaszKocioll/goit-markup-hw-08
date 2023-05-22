@@ -61,11 +61,72 @@
             </svg>
             <a class="header__phone" href="tel:+48111111111">+48 111 111 111</a>
           </div>
-        </div>
+          <div class="file">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="svg-mobile"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+  
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="link">Agencja</a></li>
+          <li><a href="portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="kontakt" class="link">Kontakt</a></li>
+        </ul>
+        <div><a class="mobile-phone" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="mobile-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+      </div>
+      <div class="social-icons">
+        <a class="social-icon">Instagram</a>
+        <a class="social-icon">Twitter</a>
+        <a class="social-icon">Facebook</a>
+        <a class="social-icon">LinkedIn</a>
+      </div>
+  
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="/mobile-menu.js"></script>
+        </div>
+      
     </header>
     <main>
-      <div class="title">
+      <div class="section title">
         <h1 class="title__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button data-modal-open class="title__button" type="button">
           Zamów usługe
@@ -158,7 +219,7 @@
         <div class="container">
           <div class="description">
             <ul class="description__advantages">
-              <li>
+              <li class="description__tile">
                 <div class="description__icon">
                   <svg width="70" height="70" class="description__img">
                     <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -210,55 +271,18 @@
           </div>
         </div>
 
-        <div class="container duties">
-          <h2 class="duties__title">Czym się zajmujemy</h2>
-          <div class="duties__tiles">
-            <figure class="duties__img">
-              <img
-                src="images/img.jpg"
-                alt="Programista wpisuje kod"
-                width="370"
-                height="294"
-              />
-              <figcaption class="duties__description">
-                APLIKACJE KOMPUTEROWE
-              </figcaption>
-            </figure>
-            <figure class="duties__img">
-              <img
-                src="images/img-a.jpg"
-                alt="Designer z telefonem w ręku"
-                width="370"
-                height="294"
-              />
-              <figcaption class="duties__description">
-                APLIKACJE MOBILNE
-              </figcaption>
-            </figure>
-            <figure class="duties__img">
-              <img
-                src="images/img-b.jpg"
-                alt="Paleta barw na tablecie"
-                width="370"
-                height="294"
-              />
-              <figcaption class="duties__description">
-                ROZWIĄZANIA GRAFICZNE
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+        
       </div>
 
-      <div class="team">
+      <div class="container team">
         <h2 class="team__title">Nasz zespół</h2>
         <div class="team__tiles">
           <div class="team__worker">
             <img
               src="images/john-doe.jpg"
               alt="John Doe"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
             />
             <h4 class="team__name">John Doe</h4>
             <p class="team__position">Product Designer</p>
@@ -290,8 +314,8 @@
             <img
               src="images/john-doe-a.jpg"
               alt="John Doe"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
             />
             <h4 class="team__name">John Doe</h4>
             <p class="team__position">Frontend Developer</p>
@@ -323,8 +347,8 @@
             <img
               src="images/john-doe-b.jpg"
               alt="John Doe"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
             />
             <h4 class="team__name">John Doe</h4>
             <p class="team__position">Marketing</p>
@@ -356,8 +380,8 @@
             <img
               src="images/john-doe-c.jpg"
               alt="John Doe"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
             />
             <h4 class="team__name">John Doe</h4>
             <p class="team__position">UI Designer</p>
@@ -424,6 +448,7 @@
         </div>
       </div>
     </main>
+    
     <footer class="footer">
       <div class="container">
         <div class="footer__navigation">
