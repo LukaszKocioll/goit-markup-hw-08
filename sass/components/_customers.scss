@@ -1,4 +1,6 @@
-.customers {max-width: 450px;
+.customers {
+  width: 100%;
+  max-width: 450px;
   @include desktop {max-width: none;}
 
   
@@ -25,7 +27,8 @@
     cursor: pointer;
     padding: 16px 32px;
     text-align: center;
-    width: 170px;
+    width: 100%;
+    max-width: 170px;
     height: 92px;
     border: $border-customers 1px solid;
     border-radius: 4px;

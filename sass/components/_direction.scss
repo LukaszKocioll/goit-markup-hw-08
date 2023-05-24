@@ -19,16 +19,13 @@
   
   .menu-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 480px;
-    height: 796px;
     padding: 32px;
+    width: 100%;
     background-color: #fff;
     z-index: 999;
-  
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out; -webkit-transform: 250ms easy-in-out;
+    inset:0;
     @include deskop {display: none;}
   }
   

@@ -1,4 +1,6 @@
-.duties {max-width: 450px;
+.duties {
+  width: 100%;
+  max-width: 450px;
   margin: 60px auto;
   @include deskop {max-width: none;
   margin: 0;}

@@ -1,4 +1,6 @@
-.title {max-width: 480px;
+.title {
+  width: 100%;
+  max-width: 480px;
   background-image: linear-gradient(
   to top,
   rgba(47, 48, 58, 0.4),
@@ -21,6 +23,7 @@ text-align: center;
   font-weight: 900;
   font-size: 26px;
   color: $text-button;
+  width: 100%;
   max-width: 696px;
   @include deskop {
     margin: 0 auto;
