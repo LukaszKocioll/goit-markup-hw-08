@@ -1,0 +1,148 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {display: flex; flex-direction: column;justify-content: space-between;
+  position: fixed;
+  padding: 32px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  -webkit-transform: 250ms easy-in-out;
+  inset: 0;
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #212121;
+}
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mobile-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #212121;
+  text-decoration: none;
+  line-height: 1, 1;
+  font-size: 40px;
+  font-weight: 500;
+}
+.link:hover {
+  color: #2196f3;
+}
+.lnk:focus {
+  color: #2196f3;
+}
+.mobile-menu {display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: #757575;
+  line-height: 1, 1;
+  text-decoration: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #212121;
+  text-decoration: none;
+}
+.file {
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons {display: flex;
+}
+
+.social-icon {
+  position: relative;
+  line-height: 1.5;
+  color: #2196f3;
+  padding: 0 5px;
+}
+
+.social-icon:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 1px;
+  background-color: #ccc;
+}
+.mobile-phone {
+  color: #2196f3;
+  font-size: 34px;
+  line-height: 1, 1;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+.mobile-mail {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1.1;
+  color: $description-color;
+  font-weight: 500;
+  font-size: 24px;
+}
