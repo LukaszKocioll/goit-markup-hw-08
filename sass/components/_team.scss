@@ -10,8 +10,9 @@
 
   @include desktop {max-width: 1200px;
     width: 100%;
-    margin: 0 auto;}}
-
+    margin: 0 auto;
+  padding: 0 0;}
+  }
 
   &__tiles {
     max-width: 450px;
@@ -37,6 +38,7 @@
     color: $title-color;
     font-size: 36px;
     @include tablet {margin-bottom: 30px;}
+    @include desktop{margin-bottom: 50px;}
   }
   
   &__worker {margin-top: 30px;

@@ -7,7 +7,6 @@
     url("../images/img-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  
   text-align: center;
   @include desktop {
     max-width: none;
@@ -25,11 +24,19 @@
     color: $text-button;
     width: 100%;
     max-width: 696px;
+    
+    @include tablet {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,3;}
     @include desktop {
       margin: 0 auto;
-      font-size: 44px;
+    line-height: 1.3;
+    font-weight: 900;
+    font-size: 44px;
+    color: $text-button;
+    max-width: 696px;
     }
-    @include tablet {}
   }
   &__button {
     margin: 0 auto 118px auto;

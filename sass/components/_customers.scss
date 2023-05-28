@@ -16,7 +16,6 @@
     justify-content: center;
     @include desktop {
       justify-content: space-between;
-      padding: 94px auto;
       gap: 0px;
       max-width: 1170px;
       flex-wrap: nowrap;
@@ -31,7 +30,7 @@
     @include desktop {
       margin: 0 auto 50px auto;
     }
-    @include tablet {margin:60px auto 30px auto;}
+    @include tablet {margin:0 auto 30px auto;}
   }
     &__logo {
       cursor: pointer;

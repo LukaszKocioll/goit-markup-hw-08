@@ -8,9 +8,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  @include desktop {
-    display: none;
-  }
 }
 
 .menu-toggle:hover,
@@ -28,9 +25,6 @@
   transition: transform 250ms ease-in-out;
   -webkit-transform: 250ms easy-in-out;
   inset: 0;
-  @include desktop {
-    display: none;
-  }
 }
 
 .menu-container.is-open {
@@ -55,9 +49,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  @include desktop {
-    display: none;
-  }
 }
 
 .menu-toggle:hover,

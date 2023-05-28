@@ -3,13 +3,16 @@
   width: 100%;
   max-width: 450px;
   
-  @include tablet {max-width: 768px; width: 100%;}
+  padding-top: 60px;
+  
+  @include tablet {max-width: 768px;
+     width: 100%;}
   @include desktop {
-    padding-bottom: 94px;
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
     width: 100%;
+    padding-top: 94px;
   }
 
   &__advantages {
